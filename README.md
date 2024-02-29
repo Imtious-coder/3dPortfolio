@@ -1,4 +1,3 @@
 # 3dPortfolio
 
-
-##### Project setup: Installed react eith vite | Added React Router Dom | Added Tailwind CSS | npm install @react-three/fiber | npm install @react-three/drei
+##### Project setup: Installed react with vite || npm i react-route-dom || Added Tailwind CSS || npm i @react-three/fiber || npm i @react-three/drei || npm i @react-spring/three |
