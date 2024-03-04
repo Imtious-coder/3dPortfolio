@@ -2,6 +2,7 @@ import { Canvas } from "@react-three/fiber";
 import React, { Suspense } from "react";
 import Loader from "../components/Loader";
 import Island from "../models/Island";
+import Sky from "../models/Sky";
 // import Loader from "../components/Loader";
 
 const Home = () => {
@@ -45,6 +46,7 @@ const Home = () => {
             groundColor="#000000"
             intensity={1}
           />
+          <Sky />
           <Island
             // isRotating={isRotating}
             // setIsRotating={setIsRotating}
