@@ -69,7 +69,7 @@ const Home = () => {
             intensity={1}
           />
           <Bird />
-          <Sky />
+          <Sky isRotating={isRotating} />
           <Island
             isRotating={isRotating}
             setIsRotating={setIsRotating}
@@ -81,7 +81,7 @@ const Home = () => {
           <Plane
             isRotating={isRotating}
             position={biplanePosition}
-            rotation={[0, 20.1, 0]}
+            rotation={[0, 20, 0]}
             scale={biplaneScale}
           />
         </Suspense>
