@@ -44,7 +44,7 @@ const Island = ({ isRotating, setIsRotating, setCurrentStage, ...props }) => {
     event.stopPropagation();
     event.preventDefault();
     if (isRotating) {
-      handlePointerUp(event);
+      // handlePointerUp(event);
       const clientX = event.touches ? event.touches[0].clientX : event.clientX;
 
       const delta = (clientX - lastX.current) / viewport.width;
