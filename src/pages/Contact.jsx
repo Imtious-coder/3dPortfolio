@@ -1,16 +1,17 @@
 import emailjs from "@emailjs/browser";
 import { Canvas } from "@react-three/fiber";
 import { Suspense, useRef, useState } from "react";
+import Alert from "../components/Alert";
 import Loader from "../components/Loader";
+import useAlert from "../hooks/useAlert";
 import Fox from "../models/Fox";
 
 // import { Alert, Loader } from "../components";
-// import useAlert from "../hooks/useAlert";
 
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({ name: "", email: "", message: "" });
-  // const { alert, showAlert, hideAlert } = useAlert();
+  const { alert, showAlert, hideAlert } = useAlert();
   const [loading, setLoading] = useState(false);
   const [currentAnimation, setCurrentAnimation] = useState("idle");
 
@@ -41,15 +42,14 @@ const Contact = () => {
       )
       .then(
         () => {
-          // showAlert({
-          //   show: true,
-          //   text: "Thank you for your message 😃",
-          //   type: "success",
-          // });
+          showAlert({
+            show: true,
+            text: "Thank you for your message 😃",
+            type: "success",
+          });
 
           setTimeout(() => {
-            // hideAlert(false);
-            // setCurrentAnimation("idle");
+            hideAlert(false);
             setForm({
               name: "",
               email: "",
@@ -63,11 +63,11 @@ const Contact = () => {
           setLoading(false);
           console.error(error);
 
-          // showAlert({
-          //   show: true,
-          //   text: "I didn't receive your message 😢",
-          //   type: "danger",
-          // });
+          showAlert({
+            show: true,
+            text: "I didn't receive your message 😢",
+            type: "danger",
+          });
         }
       );
   };
@@ -75,7 +75,6 @@ const Contact = () => {
   return (
     <section className="relative flex lg:flex-row flex-col max-container">
       {alert.show && <Alert {...alert} />}
-
       <div className="flex-1 min-w-[50%] flex flex-col">
         <h1 className="head-text">Get in Touch</h1>
 
