@@ -15,15 +15,14 @@ const About = () => {
         Hello, I'm{" "}
         <span className="blue-gradient_text font-semibold drop-shadow">
           {" "}
-          Imtious
+          Imtious Islam
         </span>{" "}
         👋
       </h1>
 
       <div className="mt-5 flex flex-col gap-3 text-slate-500">
         <p>
-          Software Engineer based in Bangladesh, specializing in technical
-          education through hands-on learning and building applications.
+          Software Engineer based in Bangladesh, specializing problem solving, and web building applications.
         </p>
       </div>
 
