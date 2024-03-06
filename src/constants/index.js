@@ -1,8 +1,6 @@
 import {
-    car,
     contact,
     css,
-    estate,
     express,
     git,
     github,
@@ -12,16 +10,17 @@ import {
     mongodb,
     nextjs,
     nodejs,
-    pricewise,
     react,
     redux,
     sass,
-    snapgram,
-    summiz,
     tailwindcss,
-    threads,
     typescript
 } from "../assets/icons";
+import Bitcoin from "../assets/icons/bitcoin.svg";
+import Commerce from "../assets/icons/commerce.svg";
+import Company from "../assets/icons/company.svg";
+import Hiring from "../assets/icons/hiring.svg";
+import Yoga from "../assets/icons/yoga.svg";
 import Bondstein from "../assets/images/bondstein.png";
 import Circledi from "../assets/images/circledi.png";
 import Intelsense from "../assets/images/intelsense.png";
@@ -191,45 +190,38 @@ export const socialLinks = [
 
 export const projects = [
     {
-        iconUrl: pricewise,
+        iconUrl: Hiring,
         theme: 'btn-back-red',
-        name: 'Amazon Price Tracker',
-        description: 'Developed a web application that tracks and notifies users of price changes for products on Amazon, helping users find the best deals.',
-        link: 'https://github.com/adrianhajdin/pricewise',
+        name: 'Hire.io',
+        description: 'Courier Agency Website to manage their Employee and Recruiters.',
+        link: 'https://hiree-io.netlify.app/',
     },
     {
-        iconUrl: threads,
+        iconUrl: Commerce,
         theme: 'btn-back-green',
-        name: 'Full Stack Threads Clone',
-        description: 'Created a full-stack replica of the popular discussion platform "Threads," enabling users to post and engage in threaded conversations.',
-        link: 'https://github.com/adrianhajdin/threads',
+        name: 'Market',
+        description: 'Full Stack next level E-commerce website. 📱',
+        link: 'https://market-web.netlify.app/',
     },
     {
-        iconUrl: car,
+        iconUrl: Yoga,
         theme: 'btn-back-blue',
-        name: 'Car Finding App',
-        description: 'Designed and built a mobile app for finding and comparing cars on the market, streamlining the car-buying process.',
-        link: 'https://github.com/adrianhajdin/project_next13_car_showcase',
+        name: 'Emmi.io',
+        description: 'Your Health management website. Fully Responsive and Smooth UI 📱',
+        link: 'https://imtious-coder.github.io/Emmi.io/',
     },
     {
-        iconUrl: snapgram,
+        iconUrl: Bitcoin,
         theme: 'btn-back-pink',
-        name: 'Full Stack Instagram Clone',
-        description: 'Built a complete clone of Instagram, allowing users to share photos and connect with friends in a familiar social media environment.',
-        link: 'https://github.com/adrianhajdin/social_media_app',
+        name: 'CFTERS',
+        description: 'Simple landing page for managing your all NFT.',
+        link: 'https://cfters-io.netlify.app/',
     },
     {
-        iconUrl: estate,
+        iconUrl: Company,
         theme: 'btn-back-black',
-        name: 'Real-Estate Application',
-        description: 'Developed a web application for real estate listings, facilitating property searches and connecting buyers with sellers.',
-        link: 'https://github.com/adrianhajdin/projects_realestate',
+        name: 'Digi.io',
+        description: 'A PSD To HTML5 Website. 100% Responsiveness.',
+        link: 'https://imtious-coder.github.io/Digi.io/',
     },
-    {
-        iconUrl: summiz,
-        theme: 'btn-back-yellow',
-        name: 'AI Summarizer Application',
-        description: 'App that leverages AI to automatically generate concise & informative summaries from lengthy text content, or blogs.',
-        link: 'https://github.com/adrianhajdin/project_ai_summarizer',
-    }
 ];
