@@ -12,4 +12,4 @@
 
 ##### Tech & Tools: React.js, Tailwind CSS, Vite, Three.js, React-fiber-three, Framer-motion, Dalle, Git, Github, & Netlify
 
-###### Imtious Islam
+###### Imtious Islam.
